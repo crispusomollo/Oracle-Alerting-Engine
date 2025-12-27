@@ -156,6 +156,12 @@ Example:
 python3 tests/run_tests.py
 ```
 
+or pipe it directly:
+
+```
+cat cpu_metric.json | python3 alert_runner.py
+```
+
 This simulates alerts using sample metric payloads and validates logic deterministically.
 
 ---
