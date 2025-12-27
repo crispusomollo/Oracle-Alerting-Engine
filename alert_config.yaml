@@ -1,0 +1,18 @@
+alerts:
+  cpu_high:
+    id: ALERT-CPU-001
+    metric: cpu_utilization
+    threshold: 90
+    duration_minutes: 5
+    severity: CRITICAL
+    auto_remediate: true
+    scheduler_action: JOB_CHAIN_RUNAWAY_SQL_REMEDIATION
+
+  blocking_locks:
+    id: ALERT-LOCK-002
+    metric: blocking_sessions
+    threshold: 1
+    duration_minutes: 2
+    severity: HIGH
+    auto_remediate: false
+
